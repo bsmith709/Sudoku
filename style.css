@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+#sudoku-grid {
+    display: grid;
+    grid-template-columns: repeat(9, 40px);
+    grid-gap: 2px;
+    margin: 20px auto;
+}
+#sudoku-grid input {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+}
