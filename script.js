@@ -9,6 +9,13 @@ document.addEventListener("DOMContentLoaded", () => {
         grid.appendChild(cell);
     }
 
+    const cells = grid.addEventListener("input", (e) => {
+        const cell = e.target;
+        if(isNaN(parseInt(cell.value)) || cell.value == 0) {
+            cell.value = "";
+        }
+    });
+
     document.getElementById("generate-puzzle").addEventListener("click", () => {
         alert("Puzzle generation logic goes here!");
     });
