@@ -28,7 +28,42 @@ body {
     font-size: 18px;
     cursor: text;
     box-sizing: border-box;
+    background-color: lightgray;
+    border-style: dashed;
 }
+
+input:nth-child(-n+9) {
+    border-top: 2px solid black !important;
+}
+
+input:nth-child(-n + 81):nth-child(n + 73) {
+    border-bottom: 2px solid black !important;
+}
+
+input:nth-child(9n + 1) {
+    border-left: 2px solid black !important;
+}
+
+input:nth-child(9n + 9) {
+    border-right: 2px solid black !important;
+}
+
+input:nth-child(9n + 3), input:nth-child(9n + 6) {
+    border-right: 1px solid black !important;
+}
+
+input:nth-child(9n + 4), input:nth-child(9n + 7) {
+    border-left: 1px solid black !important;
+}
+
+input:nth-child(-n + 27):nth-child(n + 19), input:nth-child(-n + 54):nth-child(n + 46) {
+    border-bottom: 1px solid black !important;
+}
+
+input:nth-child(-n + 36):nth-child(n + 28), input:nth-child(-n + 63):nth-child(n + 55) {
+    border-top: 1px solid black !important;
+}
+
 
 #generate-puzzle, #solve-puzzle {
     margin-top: 20px;
